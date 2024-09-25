@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 body {
-  font-family: var(--paragraph-font);
+  font-family: "Roboto", Arial, sans-serif;
   padding: 20px;
 }
 
@@ -26,7 +26,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: sans-serif;
+  font-family: "Merriweather", Arial, sans-serif;
+  color: var(--primary-color);
+}
+
+h6 {
+  font-family: "Roboto", Arial, sans-serif;
   color: var(--primary-color);
 }
 
