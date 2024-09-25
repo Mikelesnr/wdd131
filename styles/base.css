@@ -1,10 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-
-body {
-  font-family: "Roboto", Arial, sans-serif;
-  padding: 20px;
-}
-
 :root {
   --primary-color: #3f3025;
   --secondary-color: #9e6240;
@@ -20,19 +13,18 @@ body {
   --nav-hover-background-color: #f8f2dc;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Merriweather", Arial, sans-serif;
-  color: var(--primary-color);
-}
-
-h6 {
-  font-family: "Roboto", Arial, sans-serif;
-  color: var(--primary-color);
+  font-family: "Merriweather", serif;
 }
 
 header {
