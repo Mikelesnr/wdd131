@@ -138,6 +138,11 @@ footer {
 .flex-right {
   width: 250px;
 }
+
+footer {
+  color: var(--nav-link-color);
+}
+
 footer p {
   margin: 5px 0;
 }
