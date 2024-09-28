@@ -123,4 +123,9 @@ footer p {
   .hide-min {
     display: none;
   }
+
+  .gallery-sub {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
