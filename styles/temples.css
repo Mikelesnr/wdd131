@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #3f3025;
+  --secondary-color: #9e6240;
+  --accent1-color: #d3bbb8;
+  --accent2-color: #81adc8;
+
+  --heading-font: "IM Fell Great Primer", serif;
+  --paragraph-font: "Merriweather", serif;
+
+  --nav-background-color: #b3c9d6;
+  --nav-link-color: #423c3b;
+  --nav-hover-link-color: #dea47e;
+  --nav-hover-background-color: #f8f2dc;
+}
+
+/* header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+header h1 {
+  text-align: center;
+}
+
+/* body */
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
+
+/* figure */
+figure {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+figure img {
+  width: 95%;
+  height: auto;
+}
+
+figcaption {
+  background-color: #f8f8f8;
+  color: #555;
+  font-style: italic;
+  padding: 5px;
+  text-align: center;
+}
+
+/* gallery */
+.gallery,
+#heading {
+  text-align: center;
+}
+
+p {
+  padding: 25px;
+}
+
+/* navigation */
+nav {
+  display: block;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.btn-menu {
+  margin-left: 10%;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* footer */
+footer {
+  background-color: var(--accent1-color);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer {
+  color: var(--nav-link-color);
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a {
+    display: block;
+  }
+  .hide-min {
+    display: none;
+  }
+}
