@@ -1,3 +1,6 @@
+const navBtn = document.querySelector(".btn-menu");
+const nav = document.querySelector(".nav");
+
 document.addEventListener("DOMContentLoaded", () => {
   // Set current year
   document.getElementById("current-year").textContent =
@@ -21,3 +24,10 @@ function calculateWindchill(temp, wind) {
     0.3965 * temp * Math.pow(wind, 0.16)
   ).toFixed(2);
 }
+
+// manage mobile nav
+
+navBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  nav.classList.toggle("hide-min");
+});

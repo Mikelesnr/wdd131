@@ -44,7 +44,8 @@ header {
   align-items: center;
   padding: 20px;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--nav-link-color);
+  z-index: 3;
 }
 
 /* nav */
@@ -68,6 +69,10 @@ nav a:hover {
   color: var(--nav-hover-link-color); /* Corrected variable */
 }
 
+.btn-menu {
+  margin-left: 20%;
+}
+
 /* hero */
 
 .hero {
@@ -84,10 +89,13 @@ nav a:hover {
   transform: translateX(-50%);
 }
 
+.hero-content {
+  top: 40%;
+}
+
 .hero h1 {
-  top: 20%;
   font-size: 3em;
-} /* Added missing closing brace */
+}
 
 .hero p {
   top: 40%;
@@ -123,8 +131,28 @@ footer {
     flex-direction: column;
   }
 
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 0.8em;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .hide-min {
+    display: none;
+  }
+
   .hero {
-    max-height: 400px;
+    max-height: 300px;
+  }
+
+  .hero img {
+    max-height: 300px;
   }
 }
 
@@ -135,5 +163,9 @@ footer {
 
   .hero img {
     max-height: 400px;
+  }
+
+  .hide-max {
+    display: none;
   }
 }
