@@ -30,6 +30,7 @@ body {
   font-family: "Merriweather", serif;
   padding: 20px;
   margin: 0;
+  background-color: var(--nav-link-color);
 }
 
 /* header */
@@ -87,6 +88,7 @@ nav a:hover {
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
+  color: var(--nav-link-color);
 }
 
 .hero h1 {
@@ -111,6 +113,15 @@ main {
   color: var(--primary-color);
 }
 
+.weather-container {
+  display: flex;
+  align-items: center;
+}
+
+.weather-container h2 {
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
 /* footer */
 
 footer {
@@ -133,6 +144,7 @@ footer {
 
   .hero p {
     font-size: 0.8em;
+    top: 50%;
   }
 
   nav ul {
