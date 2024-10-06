@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #3f3025;
+  --secondary-color: #9e6240;
+  --accent1-color: #d3bbb8;
+  --accent2-color: #81adc8;
+
+  --heading-font: "Roboto", serif;
+  --paragraph-font: "Merriweather", serif;
+
+  --nav-background-color: #3f3025;
+  --nav-link-color: #f8f2dc;
+  --nav-hover-link-color: #81adc8;
+  --nav-hover-background-color: #9e6240;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  padding: 20px;
+  margin: 0;
+}
+
+/* header */
+
+header {
+  position: sticky;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* nav */
+
+nav {
+  background-color: var(--nav-background-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color); /* Corrected variable */
+}
+
+/* hero */
+
+.hero {
+  position: relative;
+  text-align: center; /* Center-align text horizontally */
+  color: white;
+}
+
+.hero h1,
+.hero p {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero h1 {
+  top: 20%;
+  font-size: 3em;
+} /* Added missing closing brace */
+
+.hero p {
+  top: 40%;
+  font-size: 1em;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  overflow-y: hidden;
+}
+
+/* main section */
+
+main {
+  padding: 20px;
+  color: var(--primary-color);
+}
+
+/* footer */
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--nav-link-color);
+  text-align: center;
+  padding: 20px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    max-height: 400px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hero {
+    max-height: 400px;
+  }
+
+  .hero img {
+    max-height: 400px;
+  }
+}

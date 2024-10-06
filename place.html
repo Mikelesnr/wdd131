@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive guide to Harare, the capital of Zimbabwe.">
+    <meta name="author" content="Michael Mwanza">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place_large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
+    <title>Discover Harare</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Harare</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Harare</a></li>
+                <li><a target="_blank"
+                        href="https://drive.google.com/file/d/138Z9nkVNbn14WMR7yTxJMoEzBipy9j1l/view">Wireframe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <Section>
+        <div class="hero">
+            <h1>Harare</h1>
+            <p>Welcome to my city</p>
+            <picture>
+                <source srcset="images/place/harare_dusk.webp" media="(max-width: 950px)">
+                <source srcset="images/place/harare_day.webp" media="(min-width: 950px)">
+                <img src="images/harare-small.webp" alt="Harare cityscape">
+            </picture>
+        </div>
+    </section>
+
+    <main>
+        <section id="about">
+            <h2>About Harare</h2>
+            <p>Harare is the capital of Zimbabwe and my hometown. Known for its vibrant culture and bustling markets,
+                Harare is a city that beautifully blends modernity with rich traditions. The city’s lush gardens, such
+                as the Harare Gardens and the National Botanic Garden, offer serene escapes amidst the urban landscape.
+                Harare is also a hub of economic activity, with a thriving arts scene and numerous historical landmarks
+                that tell the story of Zimbabwe’s past. Whether you’re exploring the bustling streets or enjoying the
+                peaceful parks, Harare has something unique to offer everyone.</p>
+        </section>
+        <section id="weather">
+            <h2>Weather ⛅</h2>
+            <p>Current weather conditions in Harare: Sunny, 20°C</p>
+            <p id="windchill">Windchill factor: </p>
+        </section>
+        <!-- Additional sections as needed -->
+    </main>
+
+    <footer>
+        <p>Contact us at: info@harareoverview.com</p>
+        <div class="social-media">
+            <!-- Social media links here -->
+        </div>
+        <p>© <span id="current-year"></span> | Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
