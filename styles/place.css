@@ -89,10 +89,6 @@ nav a:hover {
   transform: translateX(-50%);
 }
 
-.hero-content {
-  top: 40%;
-}
-
 .hero h1 {
   font-size: 3em;
 }
