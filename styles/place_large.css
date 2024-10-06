@@ -37,7 +37,7 @@
     top: 20%;
   }
 
-  .hero::before {
+  .hero::after {
     content: "";
     position: absolute;
     top: 0;
