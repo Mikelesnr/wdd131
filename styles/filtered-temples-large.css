@@ -1,0 +1,40 @@
+/* big screen */
+@media only screen and (min-width: 600px) {
+  .gallery {
+    text-align: center;
+  }
+
+  .gallery-sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  figure {
+    width: 100%;
+  }
+
+  nav a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hide-max {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .gallery-sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
