@@ -35,7 +35,7 @@ const temples = [
     year: 2015,
     area: 96630,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-11087-thumb.jpg",
   },
   {
     templeName: "Yigo Guam",
@@ -80,7 +80,7 @@ const temples = [
     year: 2017,
     area: 44175,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-8877-thumb.jpg",
   },
   {
     templeName: "Madrid Spain",
@@ -89,7 +89,7 @@ const temples = [
     year: 1999,
     area: 45800,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/madrid-spain-temple/madrid-spain-temple-43830.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/madrid-spain-temple/madrid-spain-temple-25171-thumb.jpg",
   },
   {
     templeName: "Frankfurt Germany",

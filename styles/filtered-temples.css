@@ -51,8 +51,8 @@ figure {
 }
 
 figure img {
+  aspect-ratio: 8/5;
   width: 95%;
-  height: auto;
 }
 
 figcaption {
