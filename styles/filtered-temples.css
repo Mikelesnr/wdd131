@@ -53,6 +53,8 @@ figure {
 figure img {
   aspect-ratio: 8/5;
   width: 95%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 figcaption {
@@ -68,6 +70,10 @@ figcaption p {
   margin-bottom: 0%;
   padding-top: 0%;
   padding-bottom: 5px;
+}
+
+.span-title {
+  color: var(--nav-link-active-color);
 }
 /* gallery */
 .gallery,
