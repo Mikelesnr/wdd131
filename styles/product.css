@@ -1,0 +1,129 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heading {
+  display: block;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+form {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(128, 104, 160);
+  color: rgb(19, 15, 9);
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-family: "Merriweather", serif;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #405de6; /* Instagram color scheme */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #5851db;
+}
+
+/* Star rating styles */
+input[type="radio"] {
+  display: none;
+  position: relative;
+  caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.stars > label {
+  color: gold;
+  width: 30px;
+  height: 30px;
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor */
+}
+
+.stars > label:hover {
+  color: #000;
+}
+
+.stars > label::before {
+  content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+  content: "\2605";
+}
+
+/* Align checkboxes with labels */
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#features div {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+#features input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}

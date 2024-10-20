@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product form learning project">
+    <meta name="author" content="Michael Mwanza">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/product.css">
+    <script defer src="scripts/product.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Review</h2>
+            <form id="reviewForm" method="get" action="review.html">
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+
+                <label for="stars">Overall Rating:</label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+
+                <label for="installationDate">Date of Installation:</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+
+                <label for="features">Useful Features:</label>
+                <div id="features">
+                    <div>
+                        <input type="checkbox" id="durability" name="features" value="Durability">
+                        <label for="durability">Durability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="usability" name="features" value="Usability">
+                        <label for="usability">Usability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="performance" name="features" value="Performance">
+                        <label for="performance">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="design" name="features" value="Design">
+                        <label for="design">Design</label>
+                    </div>
+                </div>
+
+                <textarea id="review" name="review"></textarea>
+                <label for="review">Written Review:</label>
+
+                <input type="text" id="userName" name="userName">
+                <label for="userName">User Name:</label>
+
+                <input type="submit" value="Submit Review">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear">@2024</span> Michael Mwanza, Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
