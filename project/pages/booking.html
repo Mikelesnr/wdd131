@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script defer src="../scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Car Rental Service</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="listings.html">Car Listings</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Bookings</h1>
+            <p>Book a ride with us!</p>
+        </div>
+    </header>
+    <section id="booking">
+        <h2>Book a Car</h2>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="car">Choose a car:</label>
+                <select id="car" name="car">
+                    <!-- Options will be dynamically populated -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Pick-up Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="time">Pick-up Time:</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+
+
+</body>
+
+</html>
