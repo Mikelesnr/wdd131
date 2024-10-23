@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Rental Service</title>
+    <title>Gears For Hire</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/script.js"></script>
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <script defer src="scripts/reviews.js"></script>
+    <script defer src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -21,7 +23,7 @@
                 <li><a href="pages/contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <div class="hero">
+        <div class="hero home-hero">
             <h1>Gears For Hire</h1>
             <p>Welcome to the best car rental service!</p>
         </div>
@@ -41,19 +43,40 @@
                     dedicated to assisting you every step of the way, ensuring that you drive away with a smile.</p>
             </div>
             <div class="about-image">
-                <img src="images/about.jpeg" alt="Geers for Hire Fleet">
+                <img src="images/about.jpeg" alt="Geers for Hire Fleet" loading="lazy">
             </div>
         </div>
     </section>
 
     <section id="home">
-        <h2>Featured Cars and Special Offers</h2>
-        <!-- Add featured cars and offers here -->
+        <h2 class="section-h2">Featured Cars and Special Offers</h2>
+        <div class="featured-cars">
+            <div class="car">
+                <img src="images/toyota-rav4.jpg" alt="Toyota RAV4" loading="lazy">
+                <h2>Toyota RAV4</h2>
+                <p>Booking Price: $50/day</p>
+            </div>
+            <div class="car">
+                <img src="images/Mercedes-Benz_C200.jpg" alt="Mercedes C200" loading="lazy">
+                <h2>Mercedes C200</h2>
+                <p>Booking Price: $70/day</p>
+            </div>
+        </div>
+        <div class="special-offers">
+            <div class="offer">
+                <h2>Book 10 days, get one free!</h2>
+            </div>
+            <div class="offer">
+                <h2>Book one month, get 4 days free!</h2>
+            </div>
+        </div>
     </section>
-    <section id="reviews">
-        <h2>Customer Reviews</h2>
-        <div id="reviews-container">
-            <!-- Reviews will be dynamically populated -->
+    <section id="review-container">
+        <h2 class="section-h2">Customer Reviews</h2>
+        <div class="reviews" id="reviews"></div>
+        <div class="scroll-buttons">
+            <button class="scroll-button" id="prev">previous</button>
+            <button class="scroll-button" id="next">next</button>
         </div>
     </section>
     <script src="scripts.js"></script>
