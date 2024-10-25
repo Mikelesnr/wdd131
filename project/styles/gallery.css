@@ -1,3 +1,14 @@
+/* Color Scheme */
+:root {
+  --primary-color: #333333;
+  --secondary-color: #555555;
+  --accent-color: #444444;
+  --footer-link-color: #fac5c5;
+  --text-color: #f1f1f1;
+  --section-background-color: #fff;
+  --body-background-color: #f4f4f4;
+}
+
 /* filters start */
 
 .filters {
@@ -7,8 +18,8 @@
 }
 
 .filter-btn {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--section-background-color);
   border: none;
   padding: 10px 20px;
   margin: 0 5px;
@@ -17,7 +28,7 @@
 }
 
 .filter-btn:hover {
-  background-color: #555;
+  background-color: var(--secondary-color);
 }
 /* filters end */
 
@@ -32,7 +43,7 @@
 }
 
 .car-gallery figure {
-  background: #fff;
+  background: var(--section-background-color);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;

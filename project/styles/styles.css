@@ -1,20 +1,46 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap");
+
+/* Color Scheme */
+:root {
+  --primary-color: #333333;
+  --secondary-color: #555555;
+  --accent-color: #444444;
+  --footer-link-color: #fac5c5;
+  --text-color: #f1f1f1;
+  --section-background-color: #fff;
+  --body-background-color: #f4f4f4;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: var(--body-background-color);
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Merriweather", serif;
 }
 
 section {
   padding: 2rem;
   margin: 1rem;
-  background-color: #fff;
+  background-color: var(--section-background-color);
   border-radius: 8px;
+}
+
+#map {
+  margin-top: 20px;
 }
 
 .section-h2 {
   text-align: center;
+  color: var(--primary-color);
 }
 
 /* header start */
@@ -23,10 +49,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #333;
+  background: var(--primary-color);
   position: relative;
   width: 100%;
-  color: #fff;
+  color: var(--text-color);
   padding: 20px 0;
 }
 
@@ -67,13 +93,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
 }
 .menu-toggle {
   display: none;
-  background: #444;
-  color: #fff;
+  background: var(--accent-color);
+  color: var(--text-color);
   border: none;
   font-size: 24px;
   cursor: pointer;
@@ -92,7 +118,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--section-background-color);
   text-align: center;
   margin-top: 70px;
 }
@@ -140,7 +166,7 @@ nav ul li a {
 /* about start */
 
 #about {
-  background-color: #f9f9f9;
+  background-color: var(--section-background-color);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -151,7 +177,7 @@ nav ul li a {
 #about h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: var(--primary-color);
 }
 
 .about-content {
@@ -167,7 +193,7 @@ nav ul li a {
 
 .about-text p {
   margin-bottom: 1rem;
-  color: #555;
+  color: var(--secondary-color);
 }
 
 .about-image {
@@ -190,11 +216,11 @@ nav ul li a {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: var(--section-background-color);
 }
 .car {
   text-align: center;
-  background: white;
+  background: var(--section-background-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -206,7 +232,7 @@ nav ul li a {
 }
 .car p {
   font-size: 1.2rem;
-  color: #333;
+  color: var(--primary-color);
   margin: 10px 0;
 }
 .special-offers {
@@ -216,7 +242,7 @@ nav ul li a {
 .offer {
   margin: 10px 0;
   font-size: 1.2rem;
-  color: #333;
+  color: var(--primary-color);
 }
 
 /* featured cars and special offers end */
@@ -245,7 +271,7 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: var(--section-background-color);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -263,7 +289,7 @@ nav ul li a {
 
 .review p {
   font-size: 1rem;
-  color: #333;
+  color: var(--primary-color);
 }
 
 .scroll-buttons {
@@ -278,7 +304,7 @@ nav ul li a {
 
 .scroll-button {
   background: rgba(0, 0, 0, 0.1);
-  color: #333;
+  color: var(--primary-color);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -290,7 +316,7 @@ nav ul li a {
 /* start booking form */
 
 #booking {
-  background-color: #f9f9f9;
+  background-color: var(--section-background-color);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -301,7 +327,7 @@ nav ul li a {
 #booking h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: var(--primary-color);
 }
 
 .form-group {
@@ -311,7 +337,7 @@ nav ul li a {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #555;
+  color: var(--secondary-color);
 }
 
 .form-group input,
@@ -327,8 +353,8 @@ button[type="submit"] {
   display: block;
   width: 100%;
   padding: 0.75rem;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -347,7 +373,7 @@ button[type="submit"]:hover {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  background: #fff;
+  background: var(--section-background-color);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -384,13 +410,13 @@ button[type="submit"]:hover {
 #search-results {
   margin-top: 20px;
   padding: 10px;
-  background: #f9f9f9;
+  background: var(--section-background-color);
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .booking-card {
-  background: #fff;
+  background: var(--section-background-color);
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
@@ -400,12 +426,12 @@ button[type="submit"]:hover {
 
 .booking-card h3 {
   margin-top: 0;
-  color: #333;
+  color: var(--primary-color);
 }
 
 .booking-card p {
   margin: 5px 0;
-  color: #555;
+  color: var(--secondary-color);
 }
 
 .booking-card p strong {
@@ -416,7 +442,7 @@ button[type="submit"]:hover {
 /* contact form start */
 
 #contact {
-  background-color: #f9f9f9;
+  background-color: var(--section-background-color);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -427,7 +453,7 @@ button[type="submit"]:hover {
 #contact h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: var(--primary-color);
 }
 
 .form-group {
@@ -437,7 +463,7 @@ button[type="submit"]:hover {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #555;
+  color: var(--secondary-color);
 }
 
 .form-group input,
@@ -458,8 +484,8 @@ button[type="submit"] {
   display: block;
   width: 100%;
   padding: 0.75rem;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--section-background-color);
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -468,7 +494,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #555;
+  background-color: var(--secondary-color);
 }
 
 /* contact form end */
@@ -476,15 +502,15 @@ button[type="submit"]:hover {
 /* footer start*/
 
 footer {
-  background: #333;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color);
   text-align: center;
   padding: 20px 0;
   width: 100%;
 }
 
 footer a {
-  color: #fac5c5;
+  color: var(--footer-link-color);
 }
 
 /* footer end */
@@ -520,7 +546,7 @@ footer a {
     position: absolute;
     top: 100%;
     z-index: 10;
-    background-color: #444;
+    background-color: var(--accent-color);
     width: 100%;
   }
 
@@ -584,7 +610,7 @@ footer a {
   }
   .scroll-button {
     background: transparent;
-    color: #444;
+    color: var(--accent-color);
     font-size: 24px;
     padding: 0;
   }
