@@ -7,20 +7,20 @@
     <title>Bookings</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+    <script defer src="../scripts/nav.js"></script>
     <script defer src="../scripts/script.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to Our Car Rental Service</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="listings.html">Car Listings</a></li>
-                <li><a href="booking.html">Booking</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="nav-control">
+            <div class="logo-container">
+                <img src="../images/icons/favicon.ico" alt="Gears for Hire Logo" class="logo">
+                <div class="company-name">Gears for Hire</div>
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+            </div>
+            <div id="nav-container"></div>
+        </div>
         <div class="hero booking-hero">
             <h1>Bookings</h1>
             <p>Book a ride with us!</p>
@@ -55,7 +55,7 @@
         </form>
     </section>
 
-
+    <footer id="footer"></footer>
 
 </body>
 

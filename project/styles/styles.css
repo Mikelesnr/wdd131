@@ -3,28 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+  width: 100%;
 }
 
 section {
@@ -37,6 +16,75 @@ section {
 .section-h2 {
   text-align: center;
 }
+
+/* header start */
+
+.nav-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  color: #fff;
+  padding: 0%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.home-nav li {
+  margin: 0 10px;
+  width: fit-content;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: right;
+  margin-trim: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-toggle {
+  display: none;
+  background: #444;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* header end */
 
 /* hero start */
 .hero {
@@ -51,6 +99,7 @@ section {
   align-items: center;
   color: white;
   text-align: center;
+  margin-top: 70px;
 }
 .hero::before {
   content: "";
@@ -180,58 +229,69 @@ section {
 /* reviews start */
 
 .reviews-container {
-  overflow: hidden;
   width: 100%;
-  height: 300px;
+  height: 600px;
+  position: relative;
+}
+
+.my-reviews {
   position: relative;
 }
 .reviews {
   display: flex;
+  overflow: hidden; /* Changed from wrap to hidden */
   transition: transform 0.5s ease-in-out;
 }
+
 .review {
+  top: 0;
   min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: white;
-  padding: 20px;
-  margin: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .review img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
 }
+
 .review h3 {
   margin: 10px 0;
 }
+
 .review p {
   font-size: 1rem;
   color: #333;
 }
+
 .scroll-buttons {
-  /* position: absolute; */
+  position: absolute;
   top: 50%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   transform: translateY(-50%);
   pointer-events: none;
+  z-index: 10; /* Ensure buttons are on top */
 }
+
 .scroll-button {
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  color: #333;
   border: none;
   padding: 10px;
   cursor: pointer;
   pointer-events: all;
-  z-index: 1;
+  z-index: 11; /* Ensure buttons are clickable */
 }
+
 /* reviews end */
 
 /* start booking form */
@@ -348,3 +408,190 @@ button[type="submit"]:hover {
 }
 
 /* contact form end */
+
+/* footer start*/
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+footer a {
+  color: #fac5c5;
+}
+
+/* footer end */
+
+/* universal classes */
+.hidden {
+  display: none;
+}
+
+/* mobile responsive css start*/
+
+@media (max-width: 768px) {
+  /* nav start */
+  header {
+    width: 100%;
+    min-width: 200px;
+  }
+
+  .hero {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .nav-control {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+  }
+  .navbar,
+  .home-nav {
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    background-color: #444;
+    width: 80%;
+    text-align: center;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px;
+    z-index: 11;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* nav end */
+
+  /* about start */
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  /* about end */
+
+  /* featured-cars and special-offers start*/
+  .featured-cars,
+  .special-offers {
+    flex-direction: column;
+  }
+
+  .featured-cars {
+    justify-content: space-around;
+    width: 100%;
+    padding: 0%;
+  }
+
+  .car {
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    padding: 10px;
+  }
+
+  /* featured-cars and special-offers end*/
+
+  /* reviews start */
+  .scroll-buttons {
+    position: absolute;
+    top: 30%;
+    justify-content: space-between;
+  }
+  .scroll-button {
+    background: transparent;
+    color: #444;
+    font-size: 24px;
+    padding: 0;
+  }
+
+  .scroll-hide {
+    display: none;
+  }
+  .scroll-button#prev::before {
+    content: "<<<";
+  }
+
+  .scroll-button#next::before {
+    content: ">>>";
+  }
+
+  /* reviews end */
+
+  /* start about */
+  .about-content {
+    text-align: center;
+  }
+
+  .about-text {
+    width: 100%;
+    min-width: 200px;
+  }
+
+  .about-image {
+    width: 100%;
+    min-width: 200px;
+  }
+
+  .about-image img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+  }
+
+  /* end about */
+
+  /* footer start */
+  #footer {
+    width: 100%;
+    min-width: none;
+    padding: 10px 0%;
+  }
+  /* footer end */
+}
+/* mobile responsive css start*/
+
+/* big screen start */
+
+@media (min-width: 768px) {
+  /* nav start */
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-control {
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  nav,
+  #navbar ul {
+    width: fit-content;
+  }
+
+  /* nav end */
+}
+
+/* big screen end */
