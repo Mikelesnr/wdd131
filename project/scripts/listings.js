@@ -98,7 +98,7 @@ function fillGallery(cars) {
           <p><span class="span-title">Type : </span>${car.type}</p>
           <p><span class="span-title">Price : </span>${car.rent_price}</p>
         </figcaption>
-        <img src="${car.imageUrl}" alt="image of ${car.name}">
+        <img src="${car.imageUrl}" alt="image of ${car.name}" loading="lazy">
       </figure>
     `
     )
