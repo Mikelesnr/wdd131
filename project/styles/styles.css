@@ -52,7 +52,6 @@ section {
 
 nav {
   flex-grow: 1;
-  margin-trim: 1rem;
 }
 
 nav ul {
@@ -274,7 +273,6 @@ nav ul li a {
   display: flex;
   justify-content: space-around;
   transform: translateY(-50%);
-  pointer-events: none;
   z-index: 10; /* Ensure buttons are on top */
 }
 
@@ -284,7 +282,6 @@ nav ul li a {
   border: none;
   padding: 10px;
   cursor: pointer;
-  pointer-events: all;
   z-index: 11; /* Ensure buttons are clickable */
 }
 
@@ -632,7 +629,6 @@ footer a {
   /* footer start */
   #footer {
     width: 100%;
-    min-width: none;
     padding: 10px 0%;
   }
 
