@@ -24,12 +24,10 @@ section {
   align-items: center;
   justify-content: space-between;
   background: #333;
-  color: #fff;
-  padding: 0%;
-  position: fixed;
-  top: 0;
+  position: relative;
   width: 100%;
-  z-index: 12;
+  color: #fff;
+  padding: 20px 0;
 }
 
 .logo-container {
@@ -45,7 +43,6 @@ section {
 
 .home-nav li {
   margin: 0 10px;
-  width: fit-content;
 }
 
 .company-name {
@@ -55,7 +52,6 @@ section {
 
 nav {
   flex-grow: 1;
-  text-align: right;
   margin-trim: 1rem;
 }
 
@@ -68,6 +64,7 @@ nav ul {
 
 nav ul li {
   margin: 0 10px;
+  text-align: center;
 }
 
 nav ul li a {
@@ -89,7 +86,6 @@ nav ul li a {
 /* hero start */
 .hero {
   position: relative;
-  background-image: url("path/to/your/background-image.jpg");
   background-size: cover;
   background-position: center;
   height: 70vh;
@@ -415,7 +411,7 @@ footer {
   background: #333;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -450,14 +446,14 @@ footer a {
     width: 100%;
     min-width: 200px;
   }
-  .navbar,
+
+  #nav-container,
   .home-nav {
     position: absolute;
     top: 100%;
     z-index: 10;
     background-color: #444;
-    width: 80%;
-    text-align: center;
+    width: 100%;
   }
 
   nav ul {
@@ -471,7 +467,7 @@ footer a {
   }
 
   nav ul li {
-    padding: 10px;
+    padding: 10px 0;
     z-index: 11;
   }
 
@@ -568,6 +564,7 @@ footer a {
     min-width: none;
     padding: 10px 0%;
   }
+
   /* footer end */
 }
 /* mobile responsive css start*/
@@ -584,11 +581,18 @@ footer a {
   .nav-control {
     padding: 10px;
     justify-content: space-between;
+    position: fixed;
+    z-index: 12;
+    top: 0%;
   }
 
   nav,
   #navbar ul {
     width: fit-content;
+  }
+
+  #navbar ul li {
+    padding: 10px;
   }
 
   /* nav end */
