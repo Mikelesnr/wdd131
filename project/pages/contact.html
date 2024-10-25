@@ -7,18 +7,10 @@
     <title>Contact us</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
-    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script defer type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "ntr-It2D3hMbyKngJ",
-            });
-        })();
-    </script>
-    <script defer src="../scripts/mail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script defer src="../scripts/nav.js"></script>
     <script defer src="../scripts/script.js"></script>
+    <script defer src="../scripts/mail.js"></script>
 </head>
 
 <body>
@@ -41,15 +33,15 @@
         <form id="contact-form">
             <div class="form-group">
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
+                <input type="text" id="name" name="user_name" placeholder="Your name.." required>
             </div>
             <div class="form-group">
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email..">
+                <input type="email" id="email" name="user_email" placeholder="Your email.." required>
             </div>
             <div class="form-group">
                 <label for="message">Your Message:</label>
-                <textarea id="message" name="message" placeholder="Write something.."></textarea>
+                <textarea id="message" name="message" placeholder="Write something.." required></textarea>
             </div>
             <button type="submit">Send</button>
         </form>
