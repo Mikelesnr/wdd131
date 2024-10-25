@@ -345,6 +345,77 @@ button[type="submit"]:hover {
 
 /* end booking form */
 
+/* booking search start */
+#search-bookings {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-bookings h2 {
+  text-align: center;
+}
+
+#search-bookings input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search-bookings button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search-results {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.booking-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.booking-card p strong {
+  color: #000;
+}
+/* booking search end */
+
 /* contact form start */
 
 #contact {
