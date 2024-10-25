@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const footer = document.getElementById("footer");
   footer.innerHTML = `
         <p>Address: 3 Alexander Road, Highlands, Harare</p>
-        <p>Phone: +263773 000 000</p>
+        <p>Phone: +263 773 000 000</p>
         <p>Email: <a href="mailto:mikefake@gmail.com">mikefake@gmail.com</a></p>
         <p>© 2024 by <a href="https://www.linkedin.com/in/michael-mwanza-64469227b/" target="_blank">Michael Mwanza</a></p>
     `;
