@@ -659,8 +659,14 @@ footer a {
   }
 
   /* footer end */
+iframe{
+  width:100%;
+  height:350px;
+  border:0;
 }
-/* mobile responsive css start*/
+  
+}
+/* mobile responsive css end*/
 
 /* big screen start */
 
@@ -691,4 +697,9 @@ footer a {
   /* nav end */
 }
 
-/* big screen end */
+/* tiny iframe for my portfolio */
+@media (max-width: 450px) {
+  .hero h1{
+    font-size: 2rem !important;
+  }
+}
