@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Counter</title>
+    <link rel="stylesheet" href="styles/product.css">
+    <script defer src="scripts/product.js"></script>
+</head>
+<body>
+    <h1>Review Counter</h1>
+    <div class="counter">
+        Number of reviews: <span id="reviewCount">0</span>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const reviewCount = localStorage.getItem("reviewCount") || 0;
+            document.getElementById("reviewCount").textContent = reviewCount;
+        });
+    </script>
+</body>
+</html>

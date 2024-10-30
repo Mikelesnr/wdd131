@@ -14,14 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
     option.textContent = product.name;
     productSelect.appendChild(option);
   });
-});
 
-// Counter for reviews in localStorage
-if (localStorage.getItem("reviewCount") === null) {
-  localStorage.setItem("reviewCount", 0);
-}
+  if (localStorage.getItem("reviewCount") === null) {
+    localStorage.setItem("reviewCount", 0);
+  }
 
-document.getElementById("reviewForm").addEventListener("submit", () => {
-  let reviewCount = parseInt(localStorage.getItem("reviewCount"), 10);
-  localStorage.setItem("reviewCount", reviewCount + 1);
+  document.getElementById("reviewForm").addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent the default form submission
+
+    let reviewCount = parseInt(localStorage.getItem("reviewCount"), 10);
+    localStorage.setItem("reviewCount", reviewCount + 1);
+
+    // Redirect to review.html
+    window.location.href = "review.html";
+  });
+
+  document.getElementById("currentyear").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 });

@@ -15,7 +15,6 @@
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script defer src="scripts/product.js"></script>
-    <script defer src="scripts/getdates.js"></script>
 </head>
 
 <body>
@@ -24,7 +23,6 @@
     </header>
     <main>
         <section>
-            <h2>Review</h2>
             <form id="reviewForm" method="get" action="review.html">
                 <label for="productName">Product Name:</label>
                 <select id="productName" name="productName" required>
@@ -63,11 +61,11 @@
                     </div>
                 </div>
 
-                <textarea id="review" name="review"></textarea>
                 <label for="review">Written Review:</label>
+                <textarea id="review" name="review"></textarea>
 
-                <input type="text" id="userName" name="userName">
                 <label for="userName">User Name:</label>
+                <input type="text" id="userName" name="userName">
 
                 <input type="submit">
             </form>
